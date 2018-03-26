@@ -69,18 +69,19 @@
 			//Functions Here
             function deleteItem(e) {
                 e.preventDefault();
-                $id = $(this).data('id');
+                id = $(this).data('id');
 
-                deleteItemAjax($id);
+                deleteItemAjax(id);
             }
 
-            function deleteItemAjax($id) {
+            function deleteItemAjax(id) {
                 $.ajax({
-                    url: '/api/items/' + $id,
-                    method: 'DELETE',
-                    data: { id: $id }
+                    url: '/api/items/' + id,
+                    method: 'POST',
+                    data: { _method: 'DELETE' }
                 }).done(function (response) {
                     alert('Item Number ' + response.id + ' Deleted Successfully!');
+                    location.reload();
                 });
             }
             
