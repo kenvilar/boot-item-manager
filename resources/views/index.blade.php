@@ -64,7 +64,26 @@
                 addItem(text, body);
 			});
 
+			$('body').on('click', '#delete-item', deleteItem);
+
 			//Functions Here
+            function deleteItem(e) {
+                e.preventDefault();
+                $id = $(this).data('id');
+
+                deleteItemAjax($id);
+            }
+
+            function deleteItemAjax($id) {
+                $.ajax({
+                    url: '/api/items/' + $id,
+                    method: 'DELETE',
+                    data: { id: $id }
+                }).done(function (response) {
+                    alert('Item Number ' + response.id + ' Deleted Successfully!');
+                });
+            }
+            
             function addItem(text, body) {
                 $.ajax({
                     url: '/api/items',
@@ -87,7 +106,8 @@
 					$.each(response, function(key, val) {
 						output += `
                             <li class="list-group-item">
-                                <strong>${val.text}: </strong> ${val.body}
+                                <strong>${val.text}: </strong> ${val.body} <a href="#" id="delete-item"
+                                class="btn btn-danger float-right" data-id="${val.id}">Delete</a>
                             </li>
                         `;
 					});
