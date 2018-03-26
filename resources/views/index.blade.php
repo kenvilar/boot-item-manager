@@ -30,7 +30,19 @@
         </div>
     </nav>
 
-    <div class="content">
+    <div class="container">
+        <h1>Add Item</h1>
+        <form action="" id="itemForm">
+            <div class="form-group">
+                <label for="text">Text</label>
+                <input type="text" id="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="body">Body</label>
+                <textarea id="body" class="form-control"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-outline-primary">
+        </form>
         <ul id="items" class="list-group"></ul>
     </div>
 
@@ -43,6 +55,14 @@
 		$(document).ready(function () {
 			getItems();
 
+			$('#itemForm').on('submit', function (e) {
+                e.preventDefault();
+
+                let text = $('#text').val();
+                let body = $('#body').val();
+			});
+
+			//Functions Here
 			function getItems() {
 				$.ajax({
 					url: '/api/items'
