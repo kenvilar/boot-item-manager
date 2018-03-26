@@ -43,7 +43,7 @@ class ItemsController extends Controller
         ]);
 
         if ($validator->fails()) {
-	        $response = ['response' => $validator->messages(), 'success' => false];
+	        $response[] = ['response' => $validator->messages(), 'success' => false];
 
 	        return $response;
         } else {
