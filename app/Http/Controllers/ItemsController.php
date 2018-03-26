@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Item;
 use Illuminate\Http\Request;
+use Validator;
 
 class ItemsController extends Controller
 {
@@ -36,7 +37,7 @@ class ItemsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
+        $validator = Validator::make($request->all(), [
         	'text' => 'required',
 	        'body' => 'required',
         ]);
