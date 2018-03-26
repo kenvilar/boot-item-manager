@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Item;
 use Illuminate\Http\Request;
 
 class ItemsController extends Controller
@@ -13,7 +14,8 @@ class ItemsController extends Controller
      */
     public function index()
     {
-        //
+        $items = Item::all();
+        return response()->json($items);
     }
 
     /**
@@ -45,7 +47,9 @@ class ItemsController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = Item::all()->find($id);
+
+        return response()->json($item);
     }
 
     /**
