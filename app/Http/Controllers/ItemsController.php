@@ -41,6 +41,19 @@ class ItemsController extends Controller
         	'text' => 'required',
 	        'body' => 'required',
         ]);
+
+        if ($validator->fails()) {
+	        $response = ['response' => $validator->messages(), 'success' => false];
+
+	        return $response;
+        } else {
+	        $item = new Item;
+	        $item->text = $request->input('text');
+	        $item->body = $request->input('body');
+	        $item->save();
+
+	        return response()->json($item);
+        }
     }
 
     /**
