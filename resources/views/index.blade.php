@@ -60,9 +60,25 @@
 
                 let text = $('#text').val();
                 let body = $('#body').val();
+
+                addItem(text, body);
 			});
 
 			//Functions Here
+            function addItem(text, body) {
+                $.ajax({
+                    url: '/api/items',
+                    method: 'POST',
+                    data: {
+                    	text: text,
+                        body: body
+                    }
+                }).done(function (response) {
+                    alert('Item Number ' + response.id + ' Added Successfully!');
+                    location.reload();
+                });
+            }
+
 			function getItems() {
 				$.ajax({
 					url: '/api/items'
