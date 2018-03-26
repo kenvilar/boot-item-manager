@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-03-26 08:50:39.
+    * Generated on 2018-03-26 11:55:06.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -39,6 +39,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -172,6 +173,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -305,6 +307,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -438,6 +441,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -571,6 +575,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -704,6 +709,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -837,6 +843,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
