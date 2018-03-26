@@ -116,6 +116,11 @@ class ItemsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = Item::query()->find($id);
+        $item->delete();
+
+	    $response[] = ['response' => 'Item deleted successfully!', 'success' => true];
+
+	    return $response;
     }
 }
